@@ -1,0 +1,129 @@
+
+*
+body
+{
+  background-color: black;
+  background-image:url(color2.jpg);
+  height: 20vh;
+  width: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/* Nav bar */
+.nav
+{
+  overflow: hidden;
+  width: auto;
+  background-position: fill;
+}
+.nav a 
+{
+  float: right;
+  color: white;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 15px;
+}
+.nav a:hover 
+{
+  border: 1px solid white;
+}
+.nav a.active 
+{
+ border: 1px solid white;
+}
+
+/* Heading paragraph */
+
+.food
+{
+  position: absolute;
+  width: 1000px;
+}
+.food h1
+{
+  color: white;
+  font-size: 30px;
+  text-align: left; 
+  margin-top: 50px;
+  margin-left: 10px;
+  letter-spacing: 5px;  
+}
+
+
+.food p
+{
+  color: white;
+  font-size: 15px;
+  text-align: left; 
+  margin-top: 70px;
+  margin-left: 10px;
+  letter-spacing: 2px;  
+}
+
+
+.pic h2
+{
+  color: white;
+  font-size: 18px;
+  text-align: left; 
+  margin-top: 10px;
+  margin-left: 10px;
+  letter-spacing: 2px;
+
+}
+.pic p
+{
+  color: white;
+  font-size: 12px;
+  text-align: left; 
+  margin-top: 15px;
+  margin-left: 10px;
+  letter-spacing: 2px;  
+}
+
+/* Gallery */
+
+.row {
+  margin: 300px -20px;
+  position: absolute;
+
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 30 px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  width: 30%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+img{
+
+  width:600px;
+  width: 100%;
+  margin-left: 20px;
+}
+img:hover{
+
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+
+}
+

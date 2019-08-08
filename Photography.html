@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Photography</title>
+<link href = "Stylephotography.css" rel = "stylesheet" type = "text/css">
+</head>
+
+<body>
+	<div class="nav">
+
+        <a href="Art.htm"> ART </a>
+        <a class = "active" href="Photography.htm"> PHOTOGRAPHY </a>
+        <a href="Food.htm"> FOOD </a>
+        <a href="About.htm"> ABOUT </a>
+        <a href="Home.htm"> HOME </a>
+		</div>
+
+		<div class="photo">
+			<h1>Photography</h1>	
+			<p>
+                During the creation of my AP Studio Drawing Portfolio, I would use my own photographs as a reference for my drawings. Having gone through the entire process of snapping the perfect shot, I realized photography is truly its own artform. 
+                <br>
+                <br>
+                All pictures are taken with a phone camera and some are digitally altered.
+                <br>
+                <br> 
+            </p>
+
+
+		</div>
+
+		<!-- MAIN (Center website) -->
+<div class="main">
+
+<div id="BtnNav">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+  <button class="btn" onclick="filterSelection('people')"> People </button>
+  <button class="btn" onclick="filterSelection('tofu')"> Tofu (Cat) </button>
+  <button class="btn" onclick="filterSelection('other')">Other</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  
+  <div class="column people">
+    <div class="content">
+      <img src="Photography/1.jpg" alt="Rad" >
+    </div>
+  </div>
+
+
+  
+
+  <div class="column nature">
+    <div class="content">
+    <img src="Photography/6.jpg" alt="waterfall">
+    </div>
+  </div>
+
+  <div class="column nature">
+    <div class="content">
+    <img src="Photography/7.jpg" alt="kaldi">
+    </div>
+  </div>
+
+
+
+
+  <div class="column people">
+    <div class="content">
+    <img src="Photography/10.jpg" alt="raddd">
+  </div>
+</div>
+
+    <div class="column nature">
+    <div class="content">
+      <img src="Photography/11.jpg" alt="flower">
+    </div>
+	</div>
+
+	<div class="column people">
+    <div class="content">
+    <img src="Photography/9.jpg" alt="radd" >
+    </div>
+  </div>
+
+
+    <div class="column nature">
+    <div class="content">
+      <img src="Photography/13.jpg" alt="flowerr">
+    </div>
+	</div>
+
+    <div class="column nature">
+    <div class="content">
+      <img src="Photography/14.jpg" alt="more flower" >
+    </div>
+	</div>
+
+
+    <div class="column other">
+    <div class="content">
+      <img src="Photography/12.jpg" alt="nola">
+    </div>
+	</div>
+
+
+    <div class="column people">
+    <div class="content">
+      <img src="Photography/15.jpg" alt="eye" >
+    </div>
+	</div>
+
+   
+   <div class="column nature">
+    <div class="content">
+      <img src="Photography/4.jpg" alt="lullwater">
+    </div>
+  </div>
+
+  <div class="column tofu">
+    <div class="content">
+    <img src="Photography/2.jpeg" alt="tofu" >
+    </div>
+  </div>
+
+  <div class="column people">
+    <div class="content">
+    <img src="Photography/3.jpg" alt="lisa" >
+    </div>
+    </div>
+
+  <div class="column tofu">
+    <div class="content">
+      <img src="Photography/5.jpg" alt="tofuu">
+    </div>
+  </div>
+
+   <div class="column nature">
+    <div class="content">
+      <img src="Photography/16.jpg" alt="grand" >
+    </div>
+  </div>
+
+
+   <div class="column other">
+    <div class="content">
+      <img src="Photography/8.jpg" alt="building">
+    </div>
+  </div>
+
+  
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+
+
+
+
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("BtnNav");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
+
+	
+
+
+	
+
