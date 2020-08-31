@@ -8,16 +8,6 @@ letter-spacing: 2.5px;
 color: white; 
 
 }
-.pic {
-    position: absolute;
-    left: 0;
-    margin-top: 50px;
-    width: 100%;
-    height: auto;
-    opacity: 0.7;
-
-
-}
 
 .nav
 {
@@ -39,11 +29,23 @@ color: white;
 {
   border: 1px solid white;
 }
-.nav a:active 
+.nav a.active 
 {
  border: 1px solid white;
 
 }
+
+.pic {
+    position: absolute;
+    left: 0;
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+
+
+}
+
 
 
 .welcome
