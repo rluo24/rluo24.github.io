@@ -61,7 +61,7 @@ color: white;
   text-align: left; 
   margin-top: 600px;
   float: right;
-  margin-left: 750px;
+  margin-left: 50%;
 
 }
 
@@ -80,7 +80,7 @@ color: white;
 .icons {
   margin: 15px 15px;
   text-align: center;
-  margin-left: 240px; 
+  margin-left: 15%; 
   margin-top: 100px; 
 }
 
