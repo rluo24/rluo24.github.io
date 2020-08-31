@@ -11,15 +11,13 @@ letter-spacing: 2.5px;
 
 
 
-
-/* First image (Logo. Full height) */
 .cover1 {
   background-image: url("color2.jpg");
 
 /* Set a specific height */
 
   min-height: 200px; 
-  min-width: 1500px; 
+  min-width: 100%; 
 
 /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -66,10 +64,11 @@ img{
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(4, minmax(200px, 1fr));
-  grid-gap: 2em;
+  grid-template-columns: repeat(4, minmax(20%, 1fr));
+  grid-gap: 3em;
   margin-left: 20px;
-  margin-right: 110px;  
+  margin-right: 10%; 
+  margin-bottom: 100px;  
 }
 
 
@@ -124,7 +123,7 @@ img{
   position: fixed;
   bottom: 0;
   right: 0;
-  margin-right: 2000px; 
+  margin-right: 90%; 
   display: inline-flex;
   
     cursor: pointer;
