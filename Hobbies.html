@@ -1,416 +1,335 @@
-<!DOCTYPE html>
+
+
+  <!DOCTYPE html>
 <html>
 <head>
-<title>Hobbies</title>
-<link href = "Stylehobbies.css" rel = "stylesheet" type = "text/css">
+<TITLE>Hobbies</TITLE>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
 
+</head>
 <body>
 
+<style>
+    
+body,h1,h2,h3,h4,h5,h6{font-family: "Lato", sans-serif, color: black;   text-align: left;}
+p, h1, h3{margin-left: 3%;   text-align: left;}
+body, html {
+
+height: 100%;
+background-color:#F5F5F5; 
+line-height: 1.8;
+}
+
+.w3-quarter img{margin-bottom: -6px; cursor: pointer}
+.w3-quarter img:hover{opacity: 0.6; transition: 0.3s}
+.w3-bar-block .w3-bar-item {padding:20px}
+
+.cover1 {
+  background-image: url("cover1.PNG");
+
+/* Set a specific height */
+
+  min-height: 200px; 
+  min-width: 100%; 
+
+/* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: left;
+  margin-top:50px; 
+
+
+}
+
+
+.cover2 {
+  background-image: url("cover2.PNG");
+
+/* Set a specific height */
+
+  min-height: 200px; 
+  min-width: 100%; 
+
+/* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: left;
+  margin-top:50px;
+  
+
+}
+
+
+.cover3 {
+  background-image: url("cover3.PNG");
+
+/* Set a specific height */
+
+  min-height: 200px; 
+  min-width: 100%; 
+
+/* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: left;
+  margin-top:50px; 
+
+
+
+}
+
+
+.top-link {
+  transition: all .25s ease-in-out;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-right: 90%; 
+  display: inline-flex;
+  
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5em 5em 0;
+    padding: 1em;
+    width: 50px;
+    height: 50px;
+}
+.toplink.show {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+.toplink.hide {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+    svg {
+        fill: #000;
+        width: 50px;
+        height: 50px;
+    }
+
+    svg:hover {
+        background-color: #E8E8E8;
+
+}
+
+</style>
+
+
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:30%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close Menu</a>
+  <a href="#art" onclick="w3_close()" class="w3-bar-item w3-button">Art</a>
+  <a href="#photo" onclick="w3_close()" class="w3-bar-item w3-button">Photography</a>
+  <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Food</a>
+</nav>
 		
+
 <!-- top navgation bar -->
-    <div class="nav">    
-        <a class = "active" href="Hobbies.html"> HOBBIES </a>  
-        <a href="Projects.html"> PROJECTS </a>
-        <a href="index.html"> HOME </a>
-    </div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li ><a href="index.html">Home</a></li>
+      <li><a href="Projects.html">Projects</a></li>
+      <li><a class="active" href="Hobbies.html">Hobbies</a></li>
+    </ul>
+  </div>
+</nav>
 
 
+<div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">SECTIONS ☰</div>
+<br>
 
 <!----Art ---------------------------------------------------------------------------------------->
-    <div class = "cover1">
+  <div class = "cover1" id="art">
       <h1>Art</h1>  
+
+
+<p>I have been drawing as long as I could remember. It remains one of my favorite ways to relax to this day. My AP Drawing portfolio concentration was on the enhancement of mundane objects through unique perspectives in angle and coloration. Although I am most comfortable with Prismacolor and pencil, I am looking to experiment with watercolor!</p>
+    </div>
+<!----art gallery------------->
+
+<!-- !PAGE CONTENT! -->
+  
+  <!-- Photo grid -->
+  <div class="w3-row-padding"style = "margin-top:30px">
+    <div class="w3-quarter">
+      <img src="art/1.jpg" style="width:100%; margin-bottom: 20px" onclick="onClick(this)" alt="Media: Pencil, Charcoal">
+      <img src="art/3.jpeg" style="width:100%; margin-bottom: 20px" onclick="onClick(this)" alt="Media: Watercolor, Sharpie">
+      <img src="art/6.jpg" style="width:100%; margin-bottom: 20px" onclick="onClick(this)" alt="Media: Prismacolor">
+   </div>
+    
+   <div class="w3-quarter">
+      <img src="art/9.jpg" style="width:100%; margin-bottom: 20px" onclick="onClick(this)" alt="Media: Prismacolor">
+      <img src="art/7.jpg" style="width:100%; margin-bottom: 20px" onclick="onClick(this)" alt="Media: Prismacolor">
+    </div>
+    
+    <div class="w3-quarter">
+      <img src="art/5.jpg" style="width:100%; margin-bottom: 20px" onclick="onClick(this)" alt="Media: Prismacolor">
+      <img src="art/10.jpg" style="width:100%; margin-bottom: 20px" onclick="onClick(this)" alt="Media: Pencil, Pen">
     </div>
 
-<!----art gallery------------->
-  <div class="grid-container">
-
-     <article class="location-listing">
-      	<a class="location-title">
-      		<p> Media: Pencil, Charcoal</p>
-      	</a>
-     <div class="location-image">
-       	<img  width= 20% height=100% src="art/1.jpg" >
-     </div>
-     </article>
-
-    <article class="location-listing">
-      	<a class="location-title">
-      		<p> Media: Watercolor, Sharpie</p>
-      	</a>
-     	<div class="location-image">
-       	<img width= 20% height=100%  src="art/3.jpeg">
-      </div>
-      </article>
+    <div class="w3-quarter">
+      <img src="art/4.jpg" style="width:100%; margin-bottom: 20px" onclick="onClick(this)" alt="Media: Pencil, Pen">
+      <img src="art/2.jpg" style="width:100%; margin-bottom: 20px" onclick="onClick(this)" alt="Media: Prismacolor">
+    </div>
+  </div>
 
 
-    <article class="location-listing">
-      	<a class="location-title">
-      		<p>Media: Prismacolor</p>
-      	</a>
-     	<div class="location-image">
-        <img width= 20% height=100%  src="art/6.jpg">
-        </div>
-      </article>
- 
-     <article class="location-listing">
-      	<a class="location-title" >
-      		<p>Media: Prismacolor</p>
-      	</a>
-     	<div class="location-image">
-       	<img width= 20% height=100%  src="art/9.jpg">
-      </div>
-      </article>
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
 
-     <article class="location-listing">
-      	<a class="location-title">
-      		<p>Media: Prismacolor</p>
-      	</a>
-     	<div class="location-image">
-        <img width= 20% height=100% src="art/7.jpg">
-      </div>
-      </article>
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
 
-     <article class="location-listing">
-      	<a class="location-title">
-      		<p>Media: Pencil, Pen</p>
-      	</a>
-     	<div class="location-image">
-        <img width= 20% height=100%  src="art/4.jpg">
-      </div>
-      </article>
-
-     <article class="location-listing">
-      	<a class="location-title">
-      		<p>Media: Prismacolor</p>
-      	</a>
-     	<div class="location-image">
-        <img width= 20% height=100%  src="art/5.jpg">
-      </div>
-      </article>
+</script>
 
 
-     <article class="location-listing">
-      	<a class="location-title">
-      		<p>Media: Pencil, Pen</p>
-      	</a>
-     	<div class="location-image">
-        <img width= 20% height=100%  src="art/10.jpg">
-      </div>
-      </article>
-
-
-     <article class="location-listing">
-      	<a class="location-title">
-      		<p>Media: Prismacolor</p>
-      	</a>
-     	<div class="location-image">
-        <img width= 20% height=100%  src="art/2.jpg">
-      </div>
-      </article>
-  <!-- end grid container -->
-</div>
 <!----Photography ------------------------------------------------------------------------------>
 
-    <div class = "cover1">
+<div class = "cover2"  id="photo">
       <h1>Photography</h1>  
+      <P>My photos are all taken with an iPhone. Capturing such moments allows me to appreciate the world around me. Check out my VSCO for more updates!</P>
+      <a href="https://vsco.co/bekluu/gallery"class="w3-button w3-black" style = "margin-left: 3%" target="_blank">VSCO</a>
     </div>
 <!----photo gallery------------->
-  <div class="grid-container">
 
+  <!-- Photo grid -->
+  <div class="w3-row"style = "margin-top:30px">
+    <div class="w3-quarter">
+      <img src="Photography/14.jpg" style="width:100%" onclick="onClick(this)">
+      <img src="Photography/4.jpg" style="width:100%"onclick="onClick(this)">
+      <img src="Photography/1.jpg" style="width:100%"onclick="onClick(this)">
+      <img src="Photography/10.jpg" style="width:100%"onclick="onClick(this)">
+      <img src="Photography/13.jpg" style="width:100%"onclick="onClick(this)">
+      <img src="Photography/5.jpg" style="width:100%"onclick="onClick(this)">
 
-     <article class="location-listing">
-     <div class="location-image">
-       	<img  width= 20% height= 100% src="photography/14.jpg" >
-     </div>
-     </article>
+   </div>
 
-     <article class="location-listing">
-     <div class="location-image">
-       	<img  width= 20% height= 100% src="photography/15.JPG" >
-     </div>
-     </article>
+       <div class="w3-quarter">
+      <img src="Photography/15.jpg" style="width:100%"onclick="onClick(this)">
+      <img src="Photography/12.jpeg" style="width:100%"onclick="onClick(this)">
+      <img src="Photography/3.jpg" style="width:100%"onclick="onClick(this)">
+      <img src="Photography/16.jpg" style="width:100%"onclick="onClick(this)">
+      <img src="Photography/20.jpg" style="width:100%"onclick="onClick(this)">
+      <img src="Photography/6.jpg" style="width:100%"onclick="onClick(this)">
 
-     <article class="location-listing">
-     <div class="location-image">
-       	<img  width= 20% height= 100% src="photography/27.JPG" >
-     </div>
-     </article>
+   </div>
 
+       <div class="w3-quarter">
+      <img src="Photography/27.jpg" style="width:100%"onclick="onClick(this)">
+      <img src="Photography/23.jpg" style="width:100%"onclick="onClick(this)">
+      <img src="Photography/7.jpg" style="width:100%"onclick="onClick(this)">
+      <img src="Photography/21.jpg" style="width:100%"onclick="onClick(this)">
+      <img src="Photography/22.jpg" style="width:100%"onclick="onClick(this)">
+      <img src="Photography/19.jpg" style="width:100%"onclick="onClick(this)">
 
-     <article class="location-listing">
-     <div class="location-image">
-       	<img  width= 20% height= 100% src="photography/2.JPG" >
-     </div>
-     </article>
+   </div>
 
-     <article class="location-listing">
-     <div class="location-image">
-       	<img  width= 20% height= 100% src="photography/4.JPG" >
-     </div>
-     </article>
+      <div class="w3-quarter">
+      <img src="Photography/2.jpg" style="width:100%"onclick="onClick(this)">
+      <img src="Photography/11.jpg" style="width:100%"onclick="onClick(this)">
+      <img src="Photography/8.jpg" style="width:100%"onclick="onClick(this)">
+      <img src="Photography/24.jpg" style="width:100%"onclick="onClick(this)">
+      <img src="Photography/26.jpg" style="width:100%"onclick="onClick(this)">
+      <img src="Photography/25.jpg" style="width:100%"onclick="onClick(this)">
+   </div>
+    
+  </div>
 
-     <article class="location-listing">
-     <div class="location-image">
-       	<img  width= 20% height= 100% src="photography/12.jpeg" >
-     </div>
-     </article>
-
-
-     <article class="location-listing">
-     <div class="location-image">
-       	<img  width= 20% height= 100% src="photography/23.JPG" >
-     </div>
-     </article>
-
-     <article class="location-listing">
-     <div class="location-image">
-       	<img  width= 20% height= 100% src="photography/11.JPG" >
-     </div>
-     </article>
-
-     <article class="location-listing">
-     <div class="location-image">
-       	<img  width= 20% height= 100% src="photography/1.JPG" >
-     </div>
-     </article>
-          
-     <article class="location-listing">
-     <div class="location-image">
-       	<img  width= 20% height= 100% src="photography/3.JPG" >
-     </div>
-     </article>
-
-     <article class="location-listing">
-     <div class="location-image">
-       	<img  width= 20% height= 100% src="photography/7.JPG" >
-     </div>
-     </article>
-
-     <article class="location-listing">
-     <div class="location-image">
-       	<img  width= 20% height= 100% src="photography/8.jpg" >
-     </div>
-     </article>
-
-     <article class="location-listing">
-     <div class="location-image">
-       	<img  width= 20% height= 100% src="photography/10.jpg" >
-     </div>
-     </article>
-
-     <article class="location-listing">
-     <div class="location-image">
-       	<img  width= 20% height= 100% src="photography/13.JPG" >
-     </div>
-     </article>
-
-     <article class="location-listing">
-     <div class="location-image">
-       	<img  width= 20% height= 100% src="photography/16.JPG" >
-     </div>
-     </article>
-
-     <article class="location-listing">
-     <div class="location-image">
-       	<img  width= 20% height= 100% src="photography/20.jpg" >
-     </div>
-     </article>
-
-     <article class="location-listing">
-     <div class="location-image">
-       	<img  width= 20% height= 100% src="photography/21.JPG" >
-     </div>
-     </article>
-
-     <article class="location-listing">
-     <div class="location-image">
-       	<img  width= 20% height= 100% src="photography/22.jpg" >
-     </div>
-     </article>
-
-     <article class="location-listing">
-     <div class="location-image">
-       	<img  width= 20% height= 100% src="photography/24.JPG" >
-     </div>
-     </article>
-
-     <article class="location-listing">
-     <div class="location-image">
-       	<img  width= 20% height= 100% src="photography/26.JPG" >
-     </div>
-     </article>
-
-     <article class="location-listing">
-     <div class="location-image">
-       	<img  width= 20% height= 100% src="photography/5.JPG" >
-     </div>
-     </article>
-
-     <article class="location-listing">
-     <div class="location-image">
-       	<img  width= 20% height= 100% src="photography/6.JPG" >
-     </div>
-     </article>
-
-     <article class="location-listing">
-     <div class="location-image">
-       	<img  width= 20% height= 100% src="photography/19.JPG" >
-     </div>
-     </article>
-
-     <article class="location-listing">
-     <div class="location-image">
-       	<img  width= 20% height= 100% src="photography/25.JPG" >
-     </div>
-     </article>
-
-  <!-- end grid container -->
-</div>
 
 
 
 <!----Food ------------------------------------------------------------------------------>
 
-<div class = "cover1">
-     <h1>Food</h1>           
+<div class = "cover3"  id="food">
+     <h1>Food</h1> 
+     <p>Cooking is my newest hobby. I love how therapeutic the process of planning and prepping for a meal is. The best part is of course eating the food afterwards. I never follow a recipe completely as I like to put my own touch and creativity into each meal. I am very much still a beginner but perhaps cooking for my roommates this year will allow me to improve! </p>          
 </div>
-<!----art gallery------------->
-  <div class="grid-container">
+<!----food gallery------------->
 
-     <article class="location-listing">
-      	<a class="location-title">
-      	<p>Main Dish: Ribeye Steak
-      		<br>
-      		<br>
-      	Taco night with various fillings
-        </p>
-      	</a>
-     	<div class="location-image">
-        <img  width= 20% height= 100% src="food/10.jpg" >
-      </div>
-      </article>
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" >
+    <div class="w3-quarter">
+      <img src="food/10.jpg" style="width:100%">
+      <h3>Main Dish: Ribeye Steak</h3>
+      <p> Taco night with various fillings.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="food/2.jpg" style="width:100%">
+      <h3>Main Dish: Tomatoe and Egg Soup</h3>
+      <p>Served with stirfry shrimp and peanuts. </p>
+    </div>
+    <div class="w3-quarter">
+      <img src="food/3.jpg" style="width:100%">
+      <h3>Main Dish: Bottle Gourd </h3>
+      <p>Made with glass noodles, mushrooms, and bacon bits.</p>
+      <p>Served with egg omlet and chicken/onion/bell pepper stirfry. </p>
+    </div>
+    <div class="w3-quarter">
+      <img src="food/6.jpg" alt="Pasta and Wine" style="width:100%">
+      <h3>Main Dish: Egg pancake</h3>
+      <p>Served with shrimp, green beans, and peanuts.</p>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="food/7.jpg" style="width:100%">
+      <h3>Main Dish: Steamed Egg</h3>
+      <p>Egg is steamed to a tofu-like consistency.</p>
+      <p>Served with salmon, chinese sausage, and green beans. </p>
+    </div>
+    <div class="w3-quarter">
+      <img src="food/8.jpg" style="width:100%">
+      <h3>Main Dish: Tomatoe and Egg Noodles</h3>
+      <p>The noodles added to the traditional Chinese soup is paired with fishballs and peanuts for more flavor. </p>
+    </div>
 
-    <article class="location-listing">
-      	<a class="location-title" >
-      	<p>Main Dish: Tomatoe and Egg Soup
-      		<br>
-      		<br>
-      	Served with stirfry shrimp and peanuts 
-        </p>
-      	</a>
-     	<div class="location-image">
-        <img width= 20% height= 100% src="food/2.jpg">
-      </div>
-      </article>
-
-
-    <article class="location-listing">
-      	<a class="location-title" >
-      	<p>Main Dish: Bottle Gourd 
-      		<br>
-      		<br>
-         Made with glass noodles, mushrooms, and bacon bits
-         	<br>
-         	<br>
-         Served with egg omlet and chicken/onion/bell pepper stirfry 
-        </p>
-      	</a>
-     	<div class="location-image">
-        <img width= 20% height= 100% src="food/3.jpg">
-      </div>
-      </article>
- 
-     <article class="location-listing">
-      	<a class="location-title" >
-      	<p>Main Dish: Ricecake
-      		<br>
-      		<br>
-        Stirfried with peas, corn, onions and bacon
-        </p>
-      	</a>
-     	<div class="location-image">
-        <img width= 20% height= 100% src="food/4.jpg">
-      </div>
-      </article>
-
-     <article class="location-listing">
-      	<a class="location-title">
-      	<p>Main Dish: Eggplant Toast
-      		<br>
-      		<br>
-         Served with guacamole and cheese on toast with a side of blueberry and bananna smoothie bowl</p>
-      	</a>
-     	<div class="location-image">
-        <img width= 20% height= 100% src="food/9.jpg">
-      </div>
-      </article>
-
-     <article class="location-listing">
-      	<a class="location-title">
-      		<p> Main Dish: Egg pancake
-      			<br>
-      			<br>
-            Egg mixture with chinese grass-like vegetable
-            	<br>
-            	<br>
-            Served with shrimp, green beans, and peanuts
-        	</p>
-      	</a>
-     	<div class="location-image">
-        <img width= 20% height= 100% src="food/6.jpg">
-      </div>
-      </article>
-
-     <article class="location-listing">
-      	<a class="location-title" >
-      		<p>Main Dish: Steamed Egg
-      			<br>
-      			<br>
-      		Egg is steamed to a tofu-like consistency
-      			<br>
-      			<br>
-      		Served with salmon, chinese sausage, and green beans
-      		</p>
-      	</a>
-     	<div class="location-image">
-        <img width= 20% height= 100% src="food/7.jpg">
-      </div>
-      </article>
+    <div class="w3-quarter">
+      <img src="food/1.jpg" alt="Croissant" style="width:100%">
+      <h3>Main Dish: 12345 Chinese Ribs</h3>
+      <p>Simple dish that calls for cooking wine, vinegar, sugar, soy sauce, and water in the 12345 ratio.</p>
+      <p>Served with potatoe/bacon stirfry, broccoli, and Chinese zucchini.</p>
+    </div>
+  </div>
 
 
-     <article class="location-listing">
-      	<a class="location-title" >
-      		<p>Main Dish: Tomatoe and Egg Noodles
-      			<br>
-      			<br>
-      		The noodles added to the traditional Chinese soup is paired with fishballs and peanuts for more flavor
-      		</p>
-      	</a>
-     	<div class="location-image">
-        <img width= 20% height= 100% src="food/8.jpg">
-      </div>
-      </article>
 
 
-     <article class="location-listing">
-      	<a class="location-title" >
-      		<p>Main Dish: 12345 Chinese Ribs
-      			<br>
-      			<br>
-     		 Simple dish that calls for cooking wine, vinegar, sugar, soy sauce, and water in the 12345 ratio 
-     		 	<br>
-     		 	<br>
-     		 Served with potatoe/bacon stirfry, broccoli, and Chinese zucchini
-     		  </p> 
-      	</a>
-     	<div class="location-image">
-        <img width= 20% height= 100% src="food/1.jpg">
-      </div>
-      </article>
+
   <!-- end grid container -->
+
+
+
+
 
 <!-- END GRID -->
 </div>
@@ -459,11 +378,24 @@ scrollToTopButton.onclick = function(e) {
   e.preventDefault();
   scrollToTop();
 }
-</script>
 
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
 
 </body>
 </html>
+
+
+
+
+
 
 
 
