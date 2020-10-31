@@ -3,72 +3,137 @@
 <head>
 <TITLE>Rebecca Luo</TITLE>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href = "Stylehome.css" rel = "stylesheet" type = "text/css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 </head>
 <body>
 
-<div class="pic">
-    <img src="background.jpg">
-</div> 
+<style>
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+height: 100%;
+background-color:#F5F5F5; 
+line-height: 1.8;
+}
+
+
+/* Create a Parallax Effect */
+.bgimg-1{
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('webpage.png');
+  min-height: 100%; 
+  min-width: 100%; 
+}
+
+.footer{
+    margin-top: 50%; 
+    height: 5%; 
+}
+
+
+.fa { 
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 2em;
+    padding: 20px;
+    text-decoration: none; 
+
+}
+
+
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+
+
 
 
 <!-- top navgation bar -->
-	<div class="nav">    
-     	<a href="Hobbies.html"> HOBBIES </a>  
-        <a href="Projects.html"> PROJECTS </a>
-     	<a class = "active" href="index.html"> HOME </a>
-	</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html">Home</a></li>
+      <li><a href="Projects.html">Projects</a></li>
+      <li><a href="Hobbies.html">Hobbies</a></li>
+    </ul>
+  </div>
+</nav>
 
 
-
-<!-- middle section welcome message -->
-	<div class="welcome">
-        <h2>HELLO, MY NAME IS REBECCA LUO </h2>
-        <br>
-        <h2>-- WELCOME TO MY PERSONAL WEBSITE --</h2>
-        <br>       
-    </div>
+<div class="bgimg-1 w3-opacity-min" ></div>
 
 <!-- middle section about -->
-        <div class="me">
-            <img src="me.JPG">
-        </div>
 
-        <div class="about">
-        <h2> ABOUT ME </h2>
-        <p>
-            I am currently a 3rd year at Emory University double majoring in Computer Science and Economics with a concentration in Finance. 
-            <br>
-            <br>
-            I strive to explore various concentrations to utilize data analytics, business models, design prinicples, research skills to solve real world problems. 
-            <br>
-            <br>
-            This personal website was created as a means of organizing my hobby portfolios as well as technical projects. 
-            <br>
-            <br>
+<div class="col-sm-6" style="padding-left: 5%; padding-right: 5%; float:left; margin-top:10% ">
+<img src="me.jpeg" class="img-circle w3-image w3-hover-opacity" alt="Photo of Me" width="500" height="333">
+</div>
 
-         </p>
-            <br>
-            <br>
-         <h2> LET'S STAY CONNECTED</h2>
-         <p> Click on the icons below to connect with me on Facebook, Linkedin, Github, and view my resume. </p>
-            <br>
-            <br>
-         </div>
+ <div class="col-sm-6" style="padding-left: 5%; padding-right: 5%; float:right; margin-top:10%">
+ <h3 class="w3-center">ABOUT ME</h3>
+  <p class = "w3-left">Hello! I am currently a 3rd year undergraduate at Emory University double majoring in Computer Science and Economics with a concentration in Finance. I strive to explore various concentrations at the intersection of finance and tech to utilize data analytics, business models, design principles, and research skills to solve real world problems. 
+
+ 
+  </p>
+
+  <br>
+  <br>
+
+  <p class = "w3-left"> This personal website was created as a side project for me to learn web design and at the same time organize my hobby portfolios as well as technical projects. </p>
 
 
-<!-- Footer -->
+  <br>
+  <br>
 
-<div class = "icons">
-<a class="fa fa-facebook" href="https://www.facebook.com/profile.php?id=100006943275258" target="_blank"></a>
-<a class="fa fa-linkedin" href="https://www.linkedin.com/in/rebecca-luo-2aa7b4186/" target="_blank"></a>
-<a class="fa fa-github" href="https://github.com/rluo24"target="_blank" ></a>
-<a class="fa fa-file-text" href="Luo_Ruizhi.pdf"target="_blank" ></a>
 
+  <p class = "w3-left"> On campus, I am involved in leading our Girls Who Code chapter as well as our women in tech organization – Emory ProgramHers. In my free time, I love to draw, cook, and spend time with my cat Tofu!  </p>
 
 </div>
 
+<!-- Footer -->
+
+
+<div class = "footer">
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+
+<h4>View my resume </h4>
+<a class="fa fa-file-text w3-hover-opacity" href="Luo_Ruizhi.pdf"target="_blank" ></a>
+
+<h4>Let's stay connected!!</h4>
+<a class="fa fa-facebook-official w3-hover-opacity" href="https://www.facebook.com/profile.php?id=100006943275258" target="_blank"></a>
+<a class="fa fa-linkedin w3-hover-opacity" href="https://www.linkedin.com/in/rebecca-luo-2aa7b4186/" target="_blank"></a>
+<a class="fa fa-github w3-hover-opacity" href="https://github.com/rluo24"target="_blank" ></a>
+
+</footer>
+
+</div>
 
 </body>
 </html>
+
