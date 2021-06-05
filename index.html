@@ -2,59 +2,77 @@
 <html>
 <head>
 <TITLE>Rebecca Luo</TITLE>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 </head>
+
+
 <body>
 
 <style>
 
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body,h1,h2,h3,h4,h5,h6,p {font-family: "Lato", sans-serif;}
 body, html {
 height: 100%;
 background-color:#F5F5F5; 
 line-height: 1.8;
+scroll-behavior: smooth;
 }
 
 
 /* Create a Parallax Effect */
-.bgimg-1{
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 /* First image (Logo. Full height) */
-.bgimg-1 {
+.cover {
   background-image: url('webpage.png');
   min-height: 100%; 
   min-width: 100%; 
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-.footer{
-    margin-top: 50%; 
-    height: 5%; 
+.about {
+ background-color: white; 
+ background-attachment: fixed;
+
 }
+
+.Projects {
+  background-image: url('pro2.png');
+  min-height: 80%; 
+  min-width: 100%;
+
+/* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top:45%;
+  margin-bottom:5%;  
+
+  color: #fff;
+}
+
 
 
 .fa { 
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
-    width: 25px;
-    height: 25px;
-    text-align: center;
     color: #fff;
     font-size: 30px;
     font-weight: normal;
-    line-height: 2em;
     padding: 20px;
     text-decoration: none; 
 
+}
+
+.Contact{
+    height: 5%;
 }
 
 
@@ -76,64 +94,148 @@ line-height: 1.8;
 
 <!-- top navgation bar -->
 
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <ul class="nav navbar-nav">
-      <li class="active"><a href="index.html">Home</a></li>
-      <li><a href="Projects.html">Projects</a></li>
-      <li><a href="Hobbies.html">Hobbies</a></li>
+      <li class = "active"><a href="index.html">HOME</a></li>
+      <li><a href="index.html #projects">PROJECTS</a></li>
+     <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="Hobbies.html">HOBBIES <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="Hobbies.html #art">Art</a></li>
+          <li><a href="Hobbies.html #photo">Photography</a></li>
+          <li><a href="Hobbies.html #food">Food</a></li>
+        </ul>
+      </li>
+      <li><a href="index.html #contact">CONTACT</a></li>
+
     </ul>
   </div>
 </nav>
 
 
-<div class="bgimg-1 w3-opacity-min" ></div>
+
+<div class="cover w3-opacity-min" ></div>
+
+<!-- middle section about -->
+<div class = "about">
+  <div class="col-sm-6" style="padding-left: 5%; padding-right: 5%; float:right; margin-top:5% ">
+    <img src="me.jpeg" class="img-circle w3-image w3-hover-opacity" alt="Photo of Me" width=80% height=80%>
+  </div>
+
+  <div class="col-sm-6" style="padding-left: 5%; padding-right: 5%; float:left; margin-top:5%">
+    <h3 class="w3-center">ABOUT ME</h3> <br>
+
+    <p class = "w3-left">Hello! I am currently a 4th year undergraduate student at Emory University double majoring in Computer Science and Economics with a concentration in Finance. I strive to explore various concentrations at the intersection of finance and tech to utilize data analytics, design principles, and research skills to solve real world problems. </p>
+    <br><br>
+
+    <p class = "w3-left"> I am extremely passionate about closing the gender gap in technological fields and improving environmental literacy amongst underrepresented student populations. In my free time, I love to draw, vlog, cook, and spend time with my cat Tofu! </p>
+    <br><br>
+
+    <p class = "w3-left"> This personal website was created as a side project for me to learn web design and at the same time organize my hobby portfolios as well as technical projects. Thank you for stopping by and feel free to reach out!  </p>
+    <br><br>
+
+    <p class = "w3-left"> Updated as of : Currently Updating </p>
+
+  </div>
+</div>
 
 <!-- middle section about -->
 
-<div class="col-sm-6" style="padding-left: 5%; padding-right: 5%; float:left; margin-top:10% ">
-<img src="me.jpeg" class="img-circle w3-image w3-hover-opacity" alt="Photo of Me" width="500" height="333">
+<!-- Project -->
+<div class = "Projects w3-center" id = "projects">
+  <br>
+  <h3>PROJECTS</h3> 
+  <br>
+  <p><i>Click on each project/organization for more information. (Currently in updating process)</i></p>
+  <br><br> 
+  <div class="container">
+      <div class=" row w3-row-padding w3-section">
+
+        <div class="w3-col l4 m6" style = "margin-bottom: 1%">
+          <div class="w3-hover-opacity">
+              <a href="CIMMPoster.pdf"><img src="1.png" class="img-responsive" alt="img"></a>
+          </div>
+          <h4>CIMM Research Project</h4>
+          <p>Summer 2019 || Baton Rouge, LA  </p>
+          <p style="padding: 5%; ">National Science Foundation REU project on Examination of the Mechanical and Phase Properties of the Refractory High Entropy Alloy ReMoNbTaV.</p>
+        </div>
+
+        <div class="w3-col l4 m6" style = "margin-bottom: 1%">
+          <div class="w3-hover-opacity">
+            <a href="http://www.airemory.com/"><img src="2.png" class="img-responsive" alt="img"></a>
+          </div>
+          <h4>Air Emory </h4>
+          <p>Aug 2020 – Present || Atlanta, GA </p>          
+          <p style="padding: 5%; ">Student-led air quality sensor network displaying live data from around campus at Emory.</p>
+        </div>
+
+
+        <div class="w3-col l4 m6" style = "margin-bottom: 1%">
+          <div class="w3-hover-opacity">
+            <a href="https://mcfchina.org/"><img src="3.png" class="img-responsive" alt="img"></a>
+          </div>
+          <h4>Migrant Children’s Foundation</h4>
+          <p> Nov 2020 – Present || Beijing, China (Remote) </p>          
+          <p style="padding: 5%; ">Non-profit working with disadvantaged schools in Beijing and the surrounding areas to provide healthcare and educational opportunities to the children who attend them.</p>
+        </div>
+
+
+        <div class="w3-col l4 m6" style = "margin-bottom: 1%">
+          <div class="w3-hover-opacity">
+            <a href="Bus360.pdf"><img src="5.png" class="img-responsive" alt="img"></a>
+          </div>
+          <h4>Design Thinking for Emory Goizueta</h4>
+          <p>Spring 2021 || Atlanta, GA </p>             
+          <p style="padding: 5%; ">Semester long team project to reimagine & improve the Emory Goizueta Business School Accounting BBA/MPA program through the process of design thinking.  </p>
+        </div>
+
+
+        <div class="w3-col l4 m6" style = "margin-bottom: 1%">
+          <div class="w3-hover-opacity">
+            <a href="https://www.instagram.com/ajstickers.atl/"><img src="4.png" class="img-responsive" alt="img"></a>
+          </div>
+          <h4> AJ Stickers </h4>
+          <p>June 2021 – Present || Atlanta, GA</p>             
+          <p style="padding: 5%;">E-commerace sticker store to empower women-in-STEM and promote mental health. </p>
+        </div>
+
+
+
+       <div class="w3-col l4 m6" style = "margin-bottom: 1%">
+          <div class="w3-hover-opacity">
+            <a href="https://www.instagram.com/emoryprogramhers/"><img src="6.png" class="img-responsive" alt="img"></a>
+          </div>
+          <h4>Technological Organizations </h4>
+          <p>Sept 2018 – Present || Atlanta, GA & Remote </p>            
+          <p style="padding: 5%;">Girls Who Code/Emory ProgramHers/Rewriting the Code are all organizations that aim to support women in computer science and other technological fields. </p>
+       </div>
+
+     </div>
+  </div>
 </div>
 
- <div class="col-sm-6" style="padding-left: 5%; padding-right: 5%; float:right; margin-top:10%">
- <h3 class="w3-center">ABOUT ME</h3>
-  <p class = "w3-left">Hello! I am currently a 3rd year undergraduate at Emory University double majoring in Computer Science and Economics with a concentration in Finance. I strive to explore various concentrations at the intersection of finance and tech to utilize data analytics, business models, design principles, and research skills to solve real world problems. 
-
- 
-  </p>
-
-  <br>
-  <br>
-
-  <p class = "w3-left"> This personal website was created as a side project for me to learn web design and at the same time organize my hobby portfolios as well as technical projects. </p>
+<!-- Project -->
 
 
-  <br>
-  <br>
+<!-- Contact -->
 
+<div class = "Contact" id = "contact">
+<div class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
 
-  <p class = "w3-left"> On campus, I am involved in leading our Girls Who Code chapter as well as our women in tech organization – Emory ProgramHers. In my free time, I love to draw, cook, and spend time with my cat Tofu!  </p>
+<h4>View & Download My Resume </h4>
+<a class="fa fa-file-text w3-hover-opacity w3-center " href="Luo_Ruizhi.pdf"target="_blank" ></a>
+
+<h4>Let's Stay Connected!</h4>
+<a class="fa fa-linkedin w3-hover-opacity w3-center " href="https://www.linkedin.com/in/rebecca-luo-2aa7b4186/" target="_blank"></a>
+<a class="fa fa-github w3-hover-opacity w3-center " href="https://github.com/rluo24"target="_blank" ></a>
+<a class="fa fa-facebook-official w3-hover-opacity w3-center " href="https://www.facebook.com/profile.php?id=100006943275258" target="_blank"></a>
+
+<h4> Contact Me At -- <a href="mailto:rluo24@emory.edu"> rluo24@emory.edu</a></h4>
+
 
 </div>
-
-<!-- Footer -->
-
-
-<div class = "footer">
-<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-
-<h4>View my resume </h4>
-<a class="fa fa-file-text w3-hover-opacity" href="Luo_Ruizhi.pdf"target="_blank" ></a>
-
-<h4>Let's stay connected!!</h4>
-<a class="fa fa-facebook-official w3-hover-opacity" href="https://www.facebook.com/profile.php?id=100006943275258" target="_blank"></a>
-<a class="fa fa-linkedin w3-hover-opacity" href="https://www.linkedin.com/in/rebecca-luo-2aa7b4186/" target="_blank"></a>
-<a class="fa fa-github w3-hover-opacity" href="https://github.com/rluo24"target="_blank" ></a>
-
-</footer>
-
 </div>
+<!-- Contact -->
 
 </body>
 </html>
-
